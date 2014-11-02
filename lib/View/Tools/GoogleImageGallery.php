@@ -30,7 +30,7 @@ class View_Tools_GoogleImageGallery extends \componentBase\View_Component{
 		$this->api->template->appendHTML('js_include','<link id="xepan-googleimagegallery-customcss-link" type="text/css" href="'.$gallery_css.'" rel="stylesheet" />'."\n");
 		
 		if(!$images->count()->getOne()> 0){
-			$this->add('View_Error')->set('No one images found in this gallery.. add images to this gallery');
+			$this->add('View_Error')->set('No Images found in this gallery.. add images to this gallery');
 			
 		}		
 		$image_view->setModel($images);

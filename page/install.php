@@ -21,5 +21,15 @@ class page_xImageGallery_page_install extends page_componentBase_page_install {
 			$this->api->template->appendHTML('js_include','<link id="xepan-googleimagegallery-customcss-link" type="text/css" href="'.$css_file.'" rel="stylesheet" />'."\n");
 		}
 
+
+		$model_array=array('Model_Gallery',
+							'Model_Images',
+						);
+		foreach ($model_array as  $md) {
+			$model=$this->add('xImageGallery/'.$md);
+			$model->add('dynamic_model/Controller_AutoCreator');
+			$model->tryLoadAny();
+		}
+
 	}
 }

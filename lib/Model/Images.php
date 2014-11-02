@@ -15,7 +15,7 @@ class Model_Images extends \Model_Table {
 		$this->addField('name')->type('text')->display(array('form'=>'RichText'))->defaultValue('<p></p>')->caption('Description');
 		$this->addField('is_publish')->type('boolean')->defaultValue(true);
 						
-		$this->add('dynamic_model/Controller_AutoCreator');
+		// $this->add('dynamic_model/Controller_AutoCreator');
 
 	}
 }	
