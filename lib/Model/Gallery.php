@@ -12,7 +12,7 @@ class Model_Gallery extends \Model_Table {
 		$this->hasOne('Epan','epan_id');
 		$this->addCondition('epan_id',$this->api->current_website->id);
 
-		$this->addField('name')->mandatory(true);
+		$f = $this->addField('name')->mandatory(true)->hint('Gallery Name')->group('a~12~<i class="fa fa-cog"></i> Google Gallery');
 		// $this->addField('matter')->type('text')->display(array('form'=>'RichText'))->defaultValue('<p></p>');
 		$this->hasMany('xImageGallery/Images','gallery_id');
 			

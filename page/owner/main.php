@@ -5,7 +5,7 @@ class page_xImageGallery_page_owner_main extends page_componentBase_page_owner_m
 		$this->add('H3')->setHTML('Component Owner Main Page');
 		
 		$tab=$this->add('Tabs');
-		$cat_tab=$tab->addTabURL('xImageGallery/page_owner_imageGallery','Add Gallery');
+		$cat_tab=$tab->addTabURL('xImageGallery/page_owner_imageGallery','Google Gallery');
 	}
 
 
