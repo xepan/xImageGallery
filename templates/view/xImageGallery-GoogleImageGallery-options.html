@@ -1,11 +1,11 @@
-<div id='<?$_name?>' class='epan-component-options' component_type="<?$component_type?>">
+<div id='{$_name}' class='epan-component-options' component_type="{$component_type}">
 
 	<div class="panel-group" id="accordion">
 		<div class="xepan-collasp-header component-header">
 		 	<div class="panel-heading">
 		      	<h3 class="panel-title">
 		        	<a data-toggle="collapse" data-parent="#accordion"	 href="#collapse-enquiry-ximagegallery">
-						<?$component_type_name?>
+						{$component_type_name}
 		        	</a>
 		      	</h3>
 		   	</div>
@@ -59,7 +59,7 @@ $('#xepan-googleimagegallery-custom-link').click(function(event) {
 	$(this).univ().frameURL('Edit CSS ( Google Image Gallery )','index.php?page=xImageGallery_page_gallerycss&cut_page=1');
 });
 
-var <?$component_type?>_options = {
+var {$component_type}_options = {
 	show: function (){
 		$.ajax({
 			url: 'index.php?page=xImageGallery_page_imagecats&cut_page=1',
